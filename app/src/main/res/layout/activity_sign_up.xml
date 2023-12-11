@@ -50,7 +50,7 @@
 
     <!-- Botón para volver a la actividad anterior -->
     <ImageButton
-        android:id="@+id/backButtonR"
+        android:id="@+id/buttonBackD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -61,7 +61,7 @@
         android:layout_marginBottom="16dp"
         android:background="@android:color/transparent"
         android:contentDescription="Botón de regresar"
-        android:src="@android:drawable/ic_menu_revert" />
+        android:src="@drawable/button_back" />
 
     <!-- Botón para enviar la información del registro -->
     <Button

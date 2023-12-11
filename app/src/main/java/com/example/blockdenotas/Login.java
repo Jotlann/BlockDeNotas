@@ -7,6 +7,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ public class Login extends AppCompatActivity {
     TextView txtRegisterL;
     EditText editEmailL, editPassL;
     Button buttonLoginL;
+    ImageButton buttonBackL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +63,14 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Login.this, SignUp.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonBackL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this, MainActivity.class);
                 startActivity(intent);
             }
         });

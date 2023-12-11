@@ -8,6 +8,8 @@
     tools:context=".Notas">
 
     <!-- Barra de herramientas -->
+
+    <!-- Lista de notas -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -15,14 +17,14 @@
         android:background="#FF5722"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:titleTextColor="@color/white">
+        android:titleTextColor="@color/black">
 
         <!-- Botón de volver -->
         <ImageButton
             android:id="@+id/buttonBackN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:srcCompat="@android:drawable/ic_menu_revert" />
+            android:src="@drawable/button_back" />
 
         <!-- Campo de búsqueda -->
         <SearchView
@@ -34,15 +36,15 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- Lista de notas -->
+    <!-- Botón de nueva nota -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/listNotes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolbar"
+        android:layout_marginTop="-1dp"
         android:padding="16dp" />
 
-    <!-- Botón de nueva nota -->
     <ImageButton
         android:id="@+id/buttonMoreN"
         android:layout_width="wrap_content"
@@ -51,6 +53,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        tools:srcCompat="@android:drawable/ic_menu_add" />
+        android:src="@drawable/button_more" />
 
 </RelativeLayout>

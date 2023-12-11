@@ -5,49 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1B3A57"
-    tools:context=".Diario">
+    tools:context=".CreateNote">
 
-    <!-- Campo de entrada para el título de la entrada del diario -->
-    <EditText
-        android:id="@+id/titleEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:hint="Título de la entrada"
-        android:textColorHint="#FFFFFF" />
-
-    <!-- Campo de entrada para el contenido de la entrada del diario -->
-    <EditText
-        android:id="@+id/contentEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/titleEditText"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:hint="Contenido de la entrada"
-        android:inputType="textMultiLine"
-        android:minLines="5"
-        android:textColorHint="#FFFFFF" />
-
-    <!-- Botón para volver a la actividad anterior -->
     <ImageButton
-        android:id="@+id/buttonBackD"
+        android:id="@+id/buttonBackC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:color/transparent"
-        android:contentDescription="Botón de regresar"
         android:src="@drawable/button_back" />
 
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Titulo..."
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/editContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Escriba aca..."
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/buttonSaveC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Save" />
 
 </RelativeLayout>
