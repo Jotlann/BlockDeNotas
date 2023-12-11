@@ -30,6 +30,7 @@ public class Login extends AppCompatActivity {
 
         Auth = FirebaseAuth.getInstance();
 
+        buttonBackL = findViewById(R.id.buttonBackL);
         editEmailL = findViewById(R.id.editEmailL);
         editPassL = findViewById(R.id.editPassL);
         txtRegisterL = findViewById(R.id.txtRegisterL);

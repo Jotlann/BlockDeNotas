@@ -5,31 +5,42 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    Button Login, Notes, Diary;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
 
-    //Método Botón Login
-    public void Login(View v){
-        Intent login = new Intent(MainActivity.this, Login.class);
-        startActivity(login);
-    }
+        Login = findViewById(R.id.buttonLoginMain);
+        Notes = findViewById(R.id.buttonNotas);
+        Diary = findViewById(R.id.buttonDiario);
 
-    //Método Botón Notas
-    public void Notas(View v){
-        Intent notas=new Intent(MainActivity.this, Notas.class);
-        startActivity(notas);
-    }
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+            }
+        });
 
-    //Método Botón Diario
-    public void Diario(View v){
-        Intent diario=new Intent(MainActivity.this, Diario.class);
-        startActivity(diario);
-    }
+        Notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Notas.class);
+                startActivity(intent);
+            }
+        });
 
+        Diary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Diario.class);
+                startActivity(intent);
+            }
+        });
+    }
 }

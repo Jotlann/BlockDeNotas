@@ -39,7 +39,7 @@ public class Notas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notas);
 
-        ImageButton buttonBackN = findViewById(R.id.buttonBackN);
+        buttonBackN = findViewById(R.id.buttonBackN);
         searchNotes = findViewById(R.id.searchNotes);
         listNotes = findViewById(R.id.listNotes);
         listarNotas = new ArrayList<>();
@@ -74,12 +74,7 @@ public class Notas extends AppCompatActivity {
 
 
             // Establecer el listener para manejar el evento de clic
-            buttonBackN.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    finish();
-                }
-            });
+
 
             searchNotes.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
                 @Override

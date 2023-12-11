@@ -27,7 +27,7 @@
             android:src="@drawable/button_back" />
 
         <!-- Campo de búsqueda -->
-        <SearchView
+        <androidx.appcompat.widget.SearchView
             android:id="@+id/searchNotes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

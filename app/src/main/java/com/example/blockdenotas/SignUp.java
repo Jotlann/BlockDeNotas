@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,7 +32,7 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
 
         Auth = FirebaseAuth.getInstance();
-
+        ImageButton volver = findViewById(R.id.buttonBackD);
         editEmailR = findViewById(R.id.editEmailR);
         editPassR = findViewById(R.id.editPassR);
         editPassCR = findViewById(R.id.editPassCR);
@@ -72,6 +73,12 @@ public class SignUp extends AppCompatActivity {
                 } else {
                     Toast.makeText(SignUp.this, "La contraseña no puede tener menos de 6 caracteres", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        volver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

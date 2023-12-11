@@ -22,13 +22,13 @@
             android:name=".Diario"
             android:exported="false" />
         <activity
-            android:name=".Notas"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Notas"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
