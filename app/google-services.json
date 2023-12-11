@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722079933525",
+    "project_id": "notesproyect-16c8c",
+    "storage_bucket": "notesproyect-16c8c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722079933525:android:fe335f76d41b88643860dc",
+        "android_client_info": {
+          "package_name": "com.example.blockdenotas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDudwhl8mTWUHMMAf4733v5BwXDm-NELNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

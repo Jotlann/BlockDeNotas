@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B3A57"
+    tools:context=".SignUp">
+
+    <!-- Campo de entrada para el correo electrónico -->
+    <EditText
+        android:id="@+id/editEmailR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Campo de entrada para la contraseña -->
+    <EditText
+        android:id="@+id/editPassR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editEmailR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Campo de entrada para la confirmación de contraseña -->
+    <EditText
+        android:id="@+id/editPassCR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Botón para volver a la actividad anterior -->
+    <ImageButton
+        android:id="@+id/backButtonR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Botón de regresar"
+        android:src="@android:drawable/ic_menu_revert" />
+
+    <!-- Botón para enviar la información del registro -->
+    <Button
+        android:id="@+id/buttonSignR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editPassCR"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF5722"
+        android:text="Registrarse" />
+
+</RelativeLayout>
